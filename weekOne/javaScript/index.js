@@ -4,6 +4,6 @@ function swapNumbers(a, b) {
   a = b;
   b = temp;
 
-  console.log("After swap: a =", a, ", b =", b);
+  console.log("After swapping: a =", a, ", b =", b);
 }
 swapNumbers(5, 10);

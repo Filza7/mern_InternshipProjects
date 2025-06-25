@@ -1,7 +1,9 @@
 let arr = [2, 8, 4, 6];
 let size = arr.length;
 let t = 10;
-let found1=-1;
+target(arr,size,t)
+function target(arr,size,t){
+    let found1=-1;
 let found2=-1;
 
 for (let i = 0; i < size; i++) {
@@ -19,3 +21,4 @@ if (found1 !== -1 && found2 !== -1) {
     console.log("No two numbers sum up to the target.");
 }
 console.log("  ")
+}

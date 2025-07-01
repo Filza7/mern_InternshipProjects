@@ -1,4 +1,4 @@
-// app.js
+require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
@@ -12,11 +12,7 @@ app.use(bodyParser.json());
 app.use('/api/todos', todoRoutes);
 
 // MongoDB connection
-mongoose.connect('mongodb://127.0.0.1:27017/tododb', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-})
-.then(() => console.log('MongoDB connected'))
+mongoose.connect(process.env.MONGO_URI).then(() => console.log('MongoDB connected'))
 .catch((err) => console.error('MongoDB connection error:', err));
 
 // Start server

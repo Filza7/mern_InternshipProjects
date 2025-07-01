@@ -11,6 +11,11 @@ const PORT = 3000;
 app.use(bodyParser.json());
 app.use('/api/todos', todoRoutes);
 
+// ➕ Add this route for testing
+app.get('/', (req, res) => {
+    res.send('ToDo App is working!');
+});
+
 // MongoDB connection
 mongoose.connect(process.env.MONGO_URI).then(() => console.log('MongoDB connected'))
 .catch((err) => console.error('MongoDB connection error:', err));

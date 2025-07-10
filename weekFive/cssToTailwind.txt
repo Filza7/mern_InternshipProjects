@@ -1,0 +1,28 @@
+CSS	Tailwind
+Display:flex	flex
+justify-content:space-between	justify-between
+Justify-content:center	Justify-center
+align-items:center	items-center
+flex-direction:column	flex-col
+Flex-wrap:wrap	Flex-wrap
+Gap: 20px	Gap-4
+Gap:15px	Gap-4
+Padding: 10px 15px	p-3
+Padding:15px 30px	p-4 md:p-6
+Margin-top:40px	Mt-10
+Padding: 0 10px 100px	Px-4 pb-24
+Padding-top:150px	Pt-36
+Font-size:24px	Text-2xl
+Font-weight:bold	Font-bold 
+Border:1px solid #ccc	Border border-gray-300
+Border:2px solid #333 	Border-2-gray-800
+Border-radius:8px	Rounded-lg
+Max-width:200px	w-[200px]
+background-color: #333	bg-gray-800
+Background-color: #555 (hover)	Hover:bg-gray
+Color:white	Text:white
+Color: #333	Text-gray-800
+Color: #ffcc00 (hover)	Hover:text-yellow
+Position: fixed bottom:20px right:20px	Fixed bottom-5 right-5
+Transition: color 0.3s ease	Transition-colors
+
